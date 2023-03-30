@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/script.js"></script>
+    <title>Javascript Quiz App</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="header">Javascript Quiz</h1>
+        </header>
+        <div id="quiz-info" class="hidden">
+            <div id="questions">Question</div>
+            <div id="quiz-answers" class="btn-container">
+                <button class="btn" id="answer-btn"></button>
+                <button class="btn" id="answer-btn"></button>
+                <button class="btn" id="answer-btn"></button>
+                <button class="btn" id="answer-btn"></button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="play-btn" class="play btn">Play</button>
+        </div>
+        <footer>
+            <p id="progress">Time Left: </p>
+            <form id="score" class="hidden">
+                <input type="text" name="name" id="name" placeholder="Enter Username">
+                <button id="submit-btn" class="btn">Submit</button>
+            </form>
+            <a href="../MSaverino-Code-Challenge/highscore/highscore.html">
+                <button class="btn">High Scores</button>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

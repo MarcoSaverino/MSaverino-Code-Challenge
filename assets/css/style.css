@@ -1,0 +1,114 @@
+header {
+    text-align: center;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/background_image.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(117, 117, 117);
+}
+
+footer {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    max-width: 75%;
+    background-color: white;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px;
+    margin: 20px;
+}
+
+.btn {
+    background-color: rgb(240, 73, 255);
+    font-size: x-large;
+    padding: 5px 10px;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    background-image: url(../images/button-background.png);
+}
+
+.btn:hover {
+    border: 2px dashed rgb(12, 240, 61);
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px 0 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    background-color: darkgreen;
+}
+
+.wrong {
+    background-color: darkred;
+}
+
+#questions {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 36px;
+    margin: 15px 0 10px 0;
+}
+
+#progress {
+    margin-bottom: 0;
+    font-size: x-large;
+}
+
+#quiz-info {
+    border: 5px solid rgb(235, 14, 198);
+    box-shadow: 0 0 5px rgb(10, 165, 44);
+    border-radius: 25px;
+    min-height: 100px;
+    font-weight: bold;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#play-btn, #clear-btn, #return-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px 0px 5px 0px;
+}
+
+#highscore, #submit-btn, input {
+    margin: 0 5px 0 5px;
+}
