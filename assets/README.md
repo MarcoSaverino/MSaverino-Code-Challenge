@@ -18,7 +18,7 @@ WHEN the game is over
 THEN I can save my initials and score
 
 ## SCREENSHOT WITH LINK TO PAGE PREVIEW 
-[![Screenshot](../assets/images/javascript-quiz-screenshot.PNG)](https://marcosaverino.github.io/MSaverino-Challenge-2/)
+[![Screenshot](../assets/images/javascript-quiz-screenshot.PNG)](https://marcosaverino.github.io/MSaverino-Code-Challenge)
 
 ## LINKS 
 PAGE PREVIEW: 
