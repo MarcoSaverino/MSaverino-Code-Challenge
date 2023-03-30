@@ -63,6 +63,7 @@ const questionBank = [
   },
 ];
 
+// Quiz App Code
 const startQuiz = () => {
   timeLeft = 25;
   questionIndex = 0;
@@ -96,12 +97,12 @@ const countdown = () => {
 }
 
 const nextQuestion = () => {
-  // removes excess answer buttons
+
   quizAnswers.innerHTML = '';
   renderQuestion(randomQuestions[questionIndex]);
 }
 
-// display question and makes new answer buttons
+
 const renderQuestion = (question) => {
   if (randomQuestions.length >= questionIndex + 1) {
     questionsEl.textContent = question.question;
@@ -139,7 +140,7 @@ const selectAnswer = (e) => {
   questionIndex++;
   nextQuestion();
 }
-// changes background depending on correct answer
+
 const feedback = (ele, correct) => {
   ele.classList.remove('correct', 'wrong');
   ele.classList.add(correct ? 'correct' : 'wrong');
@@ -163,15 +164,16 @@ const submit = (e) => {
   }];
 
   if (nameInput.value.trim().length !== 0) {
-    alert("You saved your score! Do you think you did a g job?");
+    alert("You saved your score! Do you think you did a good job?");
     localStorage.setItem("userScore", JSON.stringify(userScores));
   } else {
     alert("Name cannot be blank.");
   }
 }
 
+// HighScores
 const displayHighScore = () => {
-  //also remove empty string names
+
   let sortedScore = userScores.sort((a, b) => b.score - a.score)
     .filter(item => item.name.length !== 0);
 
